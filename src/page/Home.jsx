@@ -8,6 +8,7 @@ export default function Home() {
     { name: "pasta", price: "5$" },
     { name: "cake", price: "3$" },
   ];
+
   return (
     <div className="bg-slate-200 h-screen p-20">
       <div className="grid grid-cols-4 gap-10">
