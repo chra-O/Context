@@ -1,10 +1,8 @@
-import React from "react";
-import CardContext from "../Context/CardContext";
-import { useContext } from "react";
+import { React, useReducer } from "react";
+
 import { Link } from "react-router-dom";
 
 export default function() {
-  const { item } = useContext(CardContext);
   return (
     <>
       <div className="w-full bg-white">
@@ -12,7 +10,8 @@ export default function() {
           {" "}
           <button className="bg-white shadow-sm   p-6">
             {" "}
-            check {item.length}
+            Counter 
+            {/* check {item.length} */}
           </button>
         </Link>
       </div>
